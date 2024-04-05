@@ -38,7 +38,7 @@ class EditEmployee extends StatelessWidget {
               },
             ),
             backgroundColor: kblackColor),
-        backgroundColor: ConstColors.whiteColor,
+        // backgroundColor:  kWhiteColor,
         body: Padding(
           padding: mPadding,
           child: Column(
