@@ -36,8 +36,8 @@ class EmployeeView extends StatelessWidget {
                         color: kWhiteColor,
                       ),
                       onPressed: () {
-                        model.toggleSearch(); // Reset search
-                        model.filterEmployees(''); // Clear search query
+                        model.toggleSearch(); 
+                        model.filterEmployees(''); 
                       },
                     )
                   : IconButton(
@@ -46,7 +46,7 @@ class EmployeeView extends StatelessWidget {
                         color: kWhiteColor,
                       ),
                       onPressed: () {
-                        model.toggleSearch(); // Toggle the search state
+                        model.toggleSearch();
                       },
                     ),
             ],

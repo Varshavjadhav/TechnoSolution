@@ -24,7 +24,7 @@ class EmployeeViewModel extends BaseViewModel {
   List<EmployeeDetails> _filteredEmployeeList = [];
   List<EmployeeDetails> get filteredEmployeeList => _filteredEmployeeList;
 
-  String? _selectedAlphabet; // Track the selected alphabet
+  String? _selectedAlphabet; 
   String? get selectedAlphabet => _selectedAlphabet;
   bool _isSearching = false;
   bool get isSearching => _isSearching;
@@ -106,19 +106,19 @@ class EmployeeViewModel extends BaseViewModel {
     if (_selectedAlphabet == null) {
       return _employeeList;
     } else {
-      // Get employees whose names start with the selected alphabet
+      
       List<EmployeeDetails> filteredList = _employeeList
           .where((employee) =>
               employee.employeeName!.startsWith(_selectedAlphabet!))
           .toList();
 
-      // Get remaining employees
+      
       List<EmployeeDetails> remainingList = _employeeList
           .where((employee) =>
               !employee.employeeName!.startsWith(_selectedAlphabet!))
           .toList();
 
-      // Combine and return the two lists
+     
       return filteredList..addAll(remainingList);
     }
   }
